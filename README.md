@@ -37,7 +37,7 @@ completes. There are no runtime dependencies or configuration needed.
 Once *rtop-bot* has been built, getting it running in a slack workspace can be done as follows.
 
 1) There is currently an issue with the main branch rapidloop/rtop-bot in which rtop-bot does not work if the server to be queried is password-protected. rtop-bot will only work if the server the query is coming from can ssh into the server to be queried in a single line- in other words, no passwords. As a workaround solution, the user can follow the instructions http://linuxproblem.org/art_9.html. *Only recommended if security can be maintained.*
-2) Create a slack bot in your workspace. We recommend using https://grissomlab.slack.com/apps/A0F7YS25R-bots?next_id=0 as a building block.
+2) Create a slack bot in your workspace. We recommend using the existing Slack Bots app as a building block.
 3) In the command line, navigate to the folder in which the binaries for rtop-bot are built. There, run ./rtop-bot -s <API-token-here>. The API token for your specific bot can be found on the Edit Configuration tab under the Integration Settings header.
 4) Add the bot to a channel.
 5) Type @mybot: status <server>
